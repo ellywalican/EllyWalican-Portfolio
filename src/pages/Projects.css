@@ -1,0 +1,46 @@
+/* src/pages/Projects.css */
+.projects-container {
+  height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://img.pikbest.com/backgrounds/20190730/technology-in-the-concept-of-digital-background-v_1517348jpg!w700wp') center/cover no-repeat;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+}
+
+.projects-container h1 {
+  padding: 4rem 2rem 2rem;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.project-list {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 280px;
+  backdrop-filter: blur(5px);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h2 {
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.project-card p {
+  color: #eee;
+}

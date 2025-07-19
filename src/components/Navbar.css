@@ -1,0 +1,62 @@
+/* src/components/Navbar.css */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 3rem;
+  background-color: transparent; /* see-through */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 1000;
+}
+
+.navbar h2 {
+  color: white;
+  margin-right: auto;
+  font-size: 1.5rem;
+  font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.navbar li a:hover {
+  color: #ffd700; /* golden hover */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1f1f1f;
+  color: white;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
