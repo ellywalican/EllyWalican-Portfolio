@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 /* ========== BASE RESET ========== */
+=======
+/* src/pages/Home.css */
+
+>>>>>>> b44126339dd8789d3912007d20ca351f1355474d
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +12,7 @@
 
 body, html {
   height: 100%;
+<<<<<<< HEAD
   overflow: hidden;
   font-family: 'Playfair Display', serif;
   background-color: #000;
@@ -15,14 +21,28 @@ body, html {
 /* ========== HERO SECTION ========== */
 .home-hero {
   background-image: url('../Image/backG.jpg');
+=======
+  overflow: hidden; /* Prevent scroll */
+}
+
+.home-hero {
+  background-image: url('https://img.pikbest.com/backgrounds/20190730/technology-in-the-concept-of-digital-background-v_1517348jpg!w700wp'); /* Replace with your image */
+>>>>>>> b44126339dd8789d3912007d20ca351f1355474d
   background-size: cover;
   background-position: center;
   height: 100vh;
   width: 100%;
+<<<<<<< HEAD
+=======
+  position: relative;
+  font-family: 'Playfair Display', serif;
+  color: white;
+>>>>>>> b44126339dd8789d3912007d20ca351f1355474d
   display: flex;
   align-items: center;
   justify-content: flex-start;
   padding-left: 5%;
+<<<<<<< HEAD
   color: #fff;
 }
 
@@ -74,12 +94,28 @@ body, html {
   font-size: 4rem;
   font-weight: 500;
   line-height: 1.2;
+=======
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.3); /* Optional dark overlay */
+  padding: 2rem;
+  max-width: 90%;
+}
+
+.home-title {
+  font-size: 7rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+>>>>>>> b44126339dd8789d3912007d20ca351f1355474d
   text-transform: uppercase;
 }
 
 .line {
   width: 80%;
   border: 1px solid white;
+<<<<<<< HEAD
   margin: 1rem 0;
 }
 
@@ -220,4 +256,7 @@ body, html {
 @keyframes typingRole {
   from { width: 0; }
   to { width: 21ch; } /* Adjust for "SYSTEMS DEVELOPMENT" */
+=======
+  margin-top: 1rem;
+>>>>>>> b44126339dd8789d3912007d20ca351f1355474d
 }

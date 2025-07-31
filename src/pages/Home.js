@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useEffect, useState } from 'react';
 import './Home.css';
 import profileImg from '../Image/Profile.jpg';
@@ -77,6 +78,18 @@ const Home = () => {
           </div>
         </div>
       )}
+=======
+import React from 'react';
+import './Home.css';
+
+const Home = () => {
+  return (
+    <div className="home-hero">
+      <div className="overlay">
+        <h1 className="home-title">WELCOME<br />TO MY<br />PORTFOLIO</h1>
+        <hr className="line" />
+      </div>
+>>>>>>> b44126339dd8789d3912007d20ca351f1355474d
     </div>
   );
 };
