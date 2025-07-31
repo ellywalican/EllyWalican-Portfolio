@@ -1,0 +1,223 @@
+/* ========== BASE RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Playfair Display', serif;
+  background-color: #000;
+}
+
+/* ========== HERO SECTION ========== */
+.home-hero {
+  background-image: url('../Image/backG.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 5%;
+  color: #fff;
+}
+
+/* ========== OVERLAY WITH FADE-IN ========== */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.678);
+  padding: 2rem;
+  max-width: 90%;
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease;
+}
+
+.overlay.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ========== PROFILE AND TEXT ========== */
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  box-shadow: 0 4px 10px rgba(247, 3, 3, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #fff;
+}
+
+.text-section {
+  flex: 1;
+}
+
+.home-title {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.line {
+  width: 80%;
+  border: 1px solid white;
+  margin: 1rem 0;
+}
+
+/* ========== SOCIAL ICONS ========== */
+.social-links {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.social-links a img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  filter: brightness(90%);
+}
+
+.social-links a:hover img {
+  transform: scale(1.2);
+  filter: brightness(120%);
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 2.5rem;
+  }
+
+  .overlay {
+    padding: 1.5rem;
+  }
+
+  .profile-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-pic {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+/* ========== MODAL VIEW PROFILE ========== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content {
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 12px;
+  max-width: 90%;
+  text-align: center;
+  position: relative;
+  animation: zoomIn 0.4s ease-out;
+}
+
+.modal-image {
+  width: 320px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 12px #fff;
+}
+
+/* Modal caption typing effect */
+.modal-caption {
+  margin-top: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+.name-text, .role-text {
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  margin: 0 auto;
+  border: none; /* Removed cursor line */
+}
+
+.name-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  width: 0;
+  animation: typingName 1s steps(20, end) forwards;
+}
+
+.role-text {
+  font-size: 1.2rem;
+  font-family: 'Courier New', monospace;
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+  width: 0;
+  animation: typingRole 1s steps(20, end) 1.2s forwards;
+}
+
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* ========== ANIMATIONS ========== */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* Correct width based on text length */
+@keyframes typingName {
+  from { width: 0; }
+  to { width: 22ch; } /* Adjust for "ELLYBOY A. WALICAN" */
+}
+
+@keyframes typingRole {
+  from { width: 0; }
+  to { width: 21ch; } /* Adjust for "SYSTEMS DEVELOPMENT" */
+}
