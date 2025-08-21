@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/EllyWalican-Portfolio/static/css/main.d824ee0c.css",
-    "main.js": "/EllyWalican-Portfolio/static/js/main.54b716b8.js",
+    "main.css": "/EllyWalican-Portfolio/static/css/main.833c9c88.css",
+    "main.js": "/EllyWalican-Portfolio/static/js/main.3b936f7f.js",
     "static/media/amira.jpg": "/EllyWalican-Portfolio/static/media/amira.b4ec09e4d61058b37dee.jpg",
     "static/media/Wallyboy.jpg": "/EllyWalican-Portfolio/static/media/Wallyboy.9806e82461a8e0346a58.jpg",
     "static/media/js.png": "/EllyWalican-Portfolio/static/media/js.c54fa24f3bdd27d1b218.png",
@@ -11,11 +11,11 @@
     "static/media/backG.jpg": "/EllyWalican-Portfolio/static/media/backG.a9def7fb96b1bd04449f.jpg",
     "static/media/react-icons.svg": "/EllyWalican-Portfolio/static/media/react-icons.436f72057a77e5b2a88b8573843b5dff.svg",
     "index.html": "/EllyWalican-Portfolio/index.html",
-    "main.d824ee0c.css.map": "/EllyWalican-Portfolio/static/css/main.d824ee0c.css.map",
-    "main.54b716b8.js.map": "/EllyWalican-Portfolio/static/js/main.54b716b8.js.map"
+    "main.833c9c88.css.map": "/EllyWalican-Portfolio/static/css/main.833c9c88.css.map",
+    "main.3b936f7f.js.map": "/EllyWalican-Portfolio/static/js/main.3b936f7f.js.map"
   },
   "entrypoints": [
-    "static/css/main.d824ee0c.css",
-    "static/js/main.54b716b8.js"
+    "static/css/main.833c9c88.css",
+    "static/js/main.3b936f7f.js"
   ]
 }
