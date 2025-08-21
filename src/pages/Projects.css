@@ -1,15 +1,30 @@
+/* === Global Fix para gumana scroll sa buong page === */
+html, body {
+  height: auto;          /* wag i-lock sa 100vh */
+  min-height: 100vh;     /* at least full screen */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;    /* walang horizontal scroll */
+  overflow-y: auto;      /* enable vertical scroll */
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+}
+
+/* Projects Container */
 .projects-container {
   min-height: 100vh;
   padding: 2rem;
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url('https://img.pikbest.com/backgrounds/20190730/technology-in-the-concept-of-digital-background-v_1517348jpg!w700wp') center/cover no-repeat;
-  font-family: 'Segoe UI', sans-serif;
-  color: white;
+    url('https://img.pikbest.com/backgrounds/20190730/technology-in-the-concept-of-digital-background-v_1517348jpg!w700wp')
+    center/cover no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  /* ❌ wag lagyan ng overflow dito */
 }
 
+/* Title */
 .projects-container h1 {
   padding: 4rem 2rem 2rem;
   text-align: center;
@@ -17,6 +32,7 @@
   margin-bottom: 2rem;
 }
 
+/* Project list layout */
 .project-list {
   display: flex;
   gap: 2rem;
@@ -24,6 +40,7 @@
   flex-wrap: wrap;
 }
 
+/* Card design */
 .project-card {
   background: rgba(255, 255, 255, 0.1);
   padding: 1rem;
@@ -80,6 +97,8 @@
   border-radius: 12px;
   max-width: 500px;
   width: 90%;
+  max-height: 90vh;   /* ✅ hindi lalampas sa screen */
+  overflow-y: auto;   /* ✅ scrollable pag mahaba */
   text-align: center;
   color: white;
   backdrop-filter: blur(10px);
@@ -110,4 +129,57 @@
 
 .project-details button:hover {
   background: #15ddbc;
+}
+
+/* ✅ Responsive design */
+@media (max-width: 768px) {
+  .project-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 90%;
+  }
+
+  .projects-container h1 {
+    font-size: 2rem;
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card img {
+    height: 120px;
+  }
+
+  .project-card h2 {
+    font-size: 1rem;
+  }
+
+  .project-card p {
+    font-size: 0.8rem;
+  }
+}
+
+/* ✅ Custom Scrollbar */
+body::-webkit-scrollbar,
+.project-details::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb,
+.project-details::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.4);
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb:hover,
+.project-details::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.6);
+}
+
+body::-webkit-scrollbar-track,
+.project-details::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.3);
 }

@@ -1,12 +1,14 @@
-/* Base Navbar Styles */
+/* ======================
+   Base Navbar Styles
+====================== */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding: 1rem 3rem;
-  background-color: rgba(31, 31, 31, 0.85); /* Semi-transparent background */
-  backdrop-filter: blur(8px); /* Glass effect */
+  background-color: rgba(31, 31, 31, 0.85);
+  backdrop-filter: blur(8px);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,5 +47,41 @@
 }
 
 .navbar li a:hover {
-  color: #ffd700; /* Golden hover effect */
+  color: #ffd700;
+}
+
+/* ======================
+   Hamburger Menu Button
+====================== */
+.menu-btn {
+  display: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* ======================
+   Mobile Styles
+====================== */
+@media screen and (max-width: 768px) {
+  .navbar ul {
+    position: absolute;
+    top: 70px; /* below navbar */
+    right: 0;
+    width: 200px;
+    flex-direction: column;
+    background-color: rgba(31, 31, 31, 0.95);
+    padding: 1rem;
+    display: none; /* hidden by default */
+    gap: 1.5rem;
+    border-radius: 8px;
+  }
+
+  .navbar ul.open {
+    display: flex; /* show menu when open */
+  }
+
+  .menu-btn {
+    display: block; /* show hamburger button on mobile */
+  }
 }

@@ -1,4 +1,6 @@
-/* Reset styles */
+/* ======================
+   Reset & Global Styles
+====================== */
 * {
   margin: 0;
   padding: 0;
@@ -6,25 +8,24 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/* Body styling */
 body {
   background: #121212; /* Dark theme */
   color: #fff;
   line-height: 1.6;
 }
 
-/* Main App wrapper */
-.App {
-  text-align: center;
-  padding-top: 80px; /* To prevent overlap with fixed navbar */
-}
-
-/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Reusable Button Styles */
+.App {
+  text-align: center;
+  padding-top: 80px; /* Prevent overlap with navbar */
+}
+
+/* ======================
+   Reusable Buttons
+====================== */
 .btn {
   display: inline-block;
   padding: 12px 24px;
@@ -60,4 +61,115 @@ html {
 .btn:hover {
   color: #121212;
   transform: scale(1.05);
+}
+
+/* ======================
+   Sections
+====================== */
+section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Home Section */
+.home h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.home p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+}
+
+/* About Section */
+.about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Projects Section */
+.projects-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  background-color: #1f1f1f;
+  padding: 20px;
+  flex: 1 1 calc(33% - 20px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Contact Section */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.contact button {
+  padding: 12px;
+  background-color: #ffd700;
+  color: #121212;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #fff;
+  transform: scale(1.05);
+}
+
+/* ======================
+   Media Queries (Mobile)
+====================== */
+@media screen and (max-width: 768px) {
+  .home h1 {
+    font-size: 32px;
+  }
+
+  .about h2 {
+    font-size: 28px;
+  }
+
+  .projects-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .project-card {
+    flex: 1 1 100%;
+  }
+
+  .contact form {
+    width: 100%;
+    padding: 0 10px;
+  }
 }

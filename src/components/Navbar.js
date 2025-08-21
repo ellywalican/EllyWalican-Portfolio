@@ -1,16 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
   const location = useLocation();
+  const [open, setOpen] = useState(false); // state for mobile menu
 
   const handleLogoClick = () => {
     if (location.pathname === '/') {
-      // If already on home, do a full refresh
       window.location.reload();
     }
-    // Otherwise, React Router will handle the redirect to "/"
   };
 
   return (
@@ -22,12 +21,19 @@ const Navbar = () => {
           </Link>
         </h2>
       </div>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/projects">Projects</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
+
+      {/* Navigation Links */}
+      <ul className={open ? 'open' : ''}>
+        <li><Link to="/" onClick={() => setOpen(false)}>Home</Link></li>
+        <li><Link to="/about" onClick={() => setOpen(false)}>About</Link></li>
+        <li><Link to="/projects" onClick={() => setOpen(false)}>Projects</Link></li>
+        <li><Link to="/contact" onClick={() => setOpen(false)}>Contact</Link></li>
       </ul>
+
+      {/* Hamburger Menu Button */}
+      <div className="menu-btn" onClick={() => setOpen(!open)}>
+        ☰
+      </div>
     </nav>
   );
 };
