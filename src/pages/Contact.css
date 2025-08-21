@@ -1,15 +1,19 @@
+/* 📦 Container setup */
 .contact-container {
   min-height: 100vh;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('https://img.pikbest.com/backgrounds/20190730/technology-in-the-concept-of-digital-background-v_1517348jpg!w700wp') center/cover no-repeat;
+  background-image: url('../Image/backG.jpg');
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2rem;
   box-sizing: border-box;
+  flex-direction: column; /* So footer sits below */
 }
 
+/* 🧊 Glassmorphic Contact Box */
 .contact-box {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(6px);
@@ -19,6 +23,7 @@
   max-width: 600px;
   width: 100%;
   text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
 
 .contact-box h1 {
@@ -28,8 +33,10 @@
 
 .contact-box p {
   margin-bottom: 1.5rem;
+  color: #e0e0e0;
 }
 
+/* 📝 Contact Form */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -61,23 +68,16 @@
   background-color: #0097a7;
 }
 
+/* 📧 Contact Info */
 .contact-info p {
   margin: 0.3rem 0;
+  color: #ccc;
 }
 
-.social-links {
-  margin-top: 1rem;
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-}
-
-.social-links a {
-  color: #00e5ff;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-  color: #fff;
+/* 🧾 Footer */
+.footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aaa;
 }
