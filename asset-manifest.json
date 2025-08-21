@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/EllyWalican/static/css/main.1e75c8a7.css",
-    "main.js": "/EllyWalican/static/js/main.dab22321.js",
-    "static/media/amira.jpg": "/EllyWalican/static/media/amira.b4ec09e4d61058b37dee.jpg",
-    "static/media/Wallyboy.jpg": "/EllyWalican/static/media/Wallyboy.9806e82461a8e0346a58.jpg",
-    "static/media/js.png": "/EllyWalican/static/media/js.c54fa24f3bdd27d1b218.png",
-    "static/media/BookWise.jpg": "/EllyWalican/static/media/BookWise.314db869cc3d700860f8.jpg",
-    "static/media/html.png": "/EllyWalican/static/media/html.1d7b133e22ffe4829da6.png",
-    "static/media/css.png": "/EllyWalican/static/media/css.9f33c557b92e4e2e1cc8.png",
-    "static/media/backG.jpg": "/EllyWalican/static/media/backG.a9def7fb96b1bd04449f.jpg",
-    "static/media/react-icons.svg": "/EllyWalican/static/media/react-icons.436f72057a77e5b2a88b8573843b5dff.svg",
-    "index.html": "/EllyWalican/index.html",
-    "main.1e75c8a7.css.map": "/EllyWalican/static/css/main.1e75c8a7.css.map",
-    "main.dab22321.js.map": "/EllyWalican/static/js/main.dab22321.js.map"
+    "main.css": "/EllyWalican-Portfolio/static/css/main.d824ee0c.css",
+    "main.js": "/EllyWalican-Portfolio/static/js/main.54b716b8.js",
+    "static/media/amira.jpg": "/EllyWalican-Portfolio/static/media/amira.b4ec09e4d61058b37dee.jpg",
+    "static/media/Wallyboy.jpg": "/EllyWalican-Portfolio/static/media/Wallyboy.9806e82461a8e0346a58.jpg",
+    "static/media/js.png": "/EllyWalican-Portfolio/static/media/js.c54fa24f3bdd27d1b218.png",
+    "static/media/BookWise.jpg": "/EllyWalican-Portfolio/static/media/BookWise.314db869cc3d700860f8.jpg",
+    "static/media/html.png": "/EllyWalican-Portfolio/static/media/html.1d7b133e22ffe4829da6.png",
+    "static/media/css.png": "/EllyWalican-Portfolio/static/media/css.9f33c557b92e4e2e1cc8.png",
+    "static/media/backG.jpg": "/EllyWalican-Portfolio/static/media/backG.a9def7fb96b1bd04449f.jpg",
+    "static/media/react-icons.svg": "/EllyWalican-Portfolio/static/media/react-icons.436f72057a77e5b2a88b8573843b5dff.svg",
+    "index.html": "/EllyWalican-Portfolio/index.html",
+    "main.d824ee0c.css.map": "/EllyWalican-Portfolio/static/css/main.d824ee0c.css.map",
+    "main.54b716b8.js.map": "/EllyWalican-Portfolio/static/js/main.54b716b8.js.map"
   },
   "entrypoints": [
-    "static/css/main.1e75c8a7.css",
-    "static/js/main.dab22321.js"
+    "static/css/main.d824ee0c.css",
+    "static/js/main.54b716b8.js"
   ]
 }
